@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manifest — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.25rem; }
+  .updated { color: #666; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #bbb; padding: .5rem .6rem; text-align: left; vertical-align: top; }
+  th { background: rgba(127,127,127,.12); }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; }
+  .box { border-left: 4px solid #888; padding: .6rem 0 .6rem 1rem; margin: 1.25rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Manifest — Privacy Policy</h1>
+<p class="updated">Last updated 28 August 2026</p>
+
+<p>This policy covers the Android applications <strong>Manifest</strong> and
+<strong>Manifest Studio</strong> (“the apps”), published by Lucas Potter
+(“we”, “us”).</p>
+
+<div class="box">
+<p><strong>The short version.</strong> We do not operate a server, we do not
+have accounts, and we never receive your data. Everything the apps record stays
+on your device unless you or your organisation configure the apps to send it
+somewhere — and then it goes to the destination you chose, not to us.</p>
+</div>
+
+<h2>1. Who controls the data</h2>
+
+<p>The apps are supplied as tools. Where a business installs them and uses them
+to record work, <strong>that business is the data controller</strong> for
+anything recorded, and we are neither a controller nor a processor of it,
+because it never reaches us.</p>
+
+<p>We are the controller only for information you send us directly, such as an
+email asking for support.</p>
+
+<h2>2. What the apps record on your device</h2>
+
+<p>A parts catalogue contains no personal data. Personal data can enter the apps
+through the <strong>Jobs</strong> feature, when the catalogue your organisation
+has authored includes fields of these kinds:</p>
+
+<table>
+  <tr><th>Field kind</th><th>What it can hold</th></tr>
+  <tr><td>Person</td><td>A name — typically the engineer, or the customer signing off</td></tr>
+  <tr><td>Signature</td><td>A handwritten signature, captured on screen</td></tr>
+  <tr><td>Photo</td><td>Photographs taken with the device camera</td></tr>
+  <tr><td>Audio</td><td>Voice notes recorded through another app on the device</td></tr>
+  <tr><td>Video</td><td>Video recorded through another app on the device</td></tr>
+  <tr><td>Address, phone, email</td><td>Contact details typed into a job</td></tr>
+</table>
+
+<p>The apps also store a personal note and a favourites list per part, which are
+held only on the device that typed them and are never included in a catalogue
+sent to anyone else.</p>
+
+<h2>3. Where that data goes</h2>
+
+<p><strong>By default, nowhere.</strong> The apps are offline-first. A job stays
+on the device that recorded it.</p>
+
+<p>A Manifest Studio operator may configure one or more <em>destinations</em> for
+completed jobs. If they do, the job — including any names, signatures,
+photographs, recordings and video it holds — is sent to that destination. The
+available transports are:</p>
+
+<ul>
+  <li><strong>HTTPS</strong> — posted to a web address the operator specifies, over an encrypted connection</li>
+  <li><strong>Email</strong> — handed to an email app on the device</li>
+  <li><strong>File</strong> — written to a location on the device or to storage the operator chooses</li>
+</ul>
+
+<p>We do not choose these destinations, do not see them, and receive nothing.
+Once a job reaches a destination, the privacy practices of whoever operates that
+destination apply to it.</p>
+
+<p>A Manifest Studio operator may also run a catalogue server on their own
+network to distribute catalogues to their own devices. That server is theirs and
+runs on their hardware.</p>
+
+<h2>4. What we collect</h2>
+
+<p><strong>Nothing.</strong> The apps contain no analytics, no advertising, no
+crash reporting service and no tracking of any kind. There are no user accounts
+and no sign-in.</p>
+
+<p>Purchases in Manifest Studio are handled by Google Play. We receive from Play
+only the confirmation that a purchase exists. We never see your payment details.
+Google’s handling of that transaction is covered by Google’s own privacy policy.</p>
+
+<p>The barcode scanner uses Google’s ML Kit barcode library, bundled inside the
+app. It runs on the device and no image leaves the device for scanning.</p>
+
+<h2>5. How data is protected on the device</h2>
+
+<ul>
+  <li>The database is <strong>encrypted at rest</strong> using SQLCipher, with a
+      key held in the Android Keystore.</li>
+  <li>Catalogues shared between devices are encrypted and are readable only by
+      devices the organisation has paired.</li>
+  <li>Backups you create are encrypted with a passphrase you choose. We cannot
+      recover that passphrase, and neither can anyone else.</li>
+  <li>Data sent over HTTPS is encrypted in transit.</li>
+</ul>
+
+<h2>6. Permissions</h2>
+
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Camera</td><td>Scanning codes, and taking photographs on a job. Optional — the apps work without it</td></tr>
+  <tr><td>Internet</td><td>Sending completed jobs to a destination your organisation configured, and fetching catalogue updates</td></tr>
+  <tr><td>Vibration</td><td>Confirming a successful scan</td></tr>
+</table>
+
+<p>The apps request no location, contacts, microphone or background permissions.</p>
+
+<h2>7. How long data is kept</h2>
+
+<p>Jobs stay on the device until deleted. A catalogue may specify a retention
+period, after which the apps automatically anonymise or delete completed jobs on
+the device. Deleted jobs go to a bin and are permanently erased after seven
+days.</p>
+
+<p>You can delete any job at any time. Clearing the app’s storage in Android
+Settings removes everything the app holds on that device, permanently.</p>
+
+<h2>8. Children</h2>
+
+<p>The apps are business tools and are not directed at children. We do not
+knowingly collect data from anyone.</p>
+
+<h2>9. Your rights</h2>
+
+<p>Because we hold none of your data, requests to access, correct, export or
+erase job data should go to the business that operates the app — they hold it.
+The apps let them export and delete it on the device.</p>
+
+<p>If you have contacted us directly and want that correspondence deleted, ask
+and we will delete it.</p>
+
+<h2>10. Changes</h2>
+
+<p>If this policy changes, the date at the top changes with it, and the current
+version is always at this address.</p>
+
+<h2>11. Contact</h2>
+
+<p>Questions about this policy: <strong>REPLACE-WITH-YOUR-SUPPORT-EMAIL</strong></p>
+
+</body>
+</html>
